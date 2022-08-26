@@ -12,20 +12,22 @@ const AppList = ()=> {
     const [apps,setApps] = useState([])
 
     useEffect(()=> {
+        let ex = []
         AppInstalledChecker.getAppList().forEach(elem => {
-            setApps(prev => prev.push({key: {elem}}))
+            ex.push({key: elem})
         })
+        setApps(ex)
     },[]);
 
-    console.log(apps);
+    console.log(typeof apps);
 
     return (
         <View style={styles.appList}>
           <Text style={{color:colors.dark}}>This is where the menu should be</Text>
-          {/* <FlatList
+          <FlatList
             data={apps}
-            renderItem={([item]) => <Text>{item}</Text>}
-          /> */}
+            renderItem={({item}) => <Text>{item.key}</Text>}
+          />
         </View>
     )
 }

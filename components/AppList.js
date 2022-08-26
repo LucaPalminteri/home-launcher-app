@@ -23,10 +23,11 @@ const AppList = ()=> {
 
     return (
         <View style={styles.appList}>
-          <Text style={{color:colors.dark}}>This is where the menu should be</Text>
+          <Text style={{color:colors.dark, fontSize: 40,borderBottomWidth: 3,borderColor: colors.darkDark , width: '100%',textAlign: 'center'}}>This is where the menu should be</Text>
           <FlatList
+            style={styles.flatList}
             data={apps}
-            renderItem={({item}) => <Text>{item.key}</Text>}
+            renderItem={({item}) => <Text style={styles.itemFlatList}>{item.key}</Text>}
           />
         </View>
     )

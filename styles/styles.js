@@ -51,21 +51,47 @@ const styles = StyleSheet.create({
   },
   // AppList
   appList: {
-    marginTop: 50,
+    position: 'relative',
     display: "flex",
     flexGrow: 1,
+    flexDirection: 'row',
     justifyContent: "center",
     alignItems: "center",
+    paddingBottom:30,
   },
   flatList: {
     width: '100%',
+    paddingLeft: 40
   },
   itemFlatList: {
     padding: 8,
-    paddingLeft: 20,
     fontSize: 25,
-    color: colors.dark
+    color: colors.dark,
+    width: '100%',
   },
+  textInput: {
+    color:colors.dark, 
+    fontSize: 30,
+    borderBottomWidth: 3,
+    borderColor: colors.darkDark , 
+    width: '100%',
+    textAlign: 'left',
+    paddingBottom: 10,
+    paddingLeft: 50
+  },
+  sideBar: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    height: '100%',
+    width: 60,
+    textAlign: 'center'
+  },
+  listView: {
+    marginTop: 50,
+    width: '100%',
+    marginBottom: 30
+  }
 });
 
 export default styles;

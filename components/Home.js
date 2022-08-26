@@ -6,8 +6,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 const phone = <Icon name="phone" size={25} color={colors.dark} />;
 const camera = <Icon name="camera" size={20} color={colors.dark} />;
-const search = <Icon name="magnifying-glass" size={30} color="#FFF" />;
-const settings = <Icon name="gear" size={30} color="#FFF" />;
 
 const Home = ()=> {
 

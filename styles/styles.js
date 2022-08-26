@@ -50,6 +50,12 @@ const styles = StyleSheet.create({
         padding: 30
       },
       // AppList
+      appList: {
+        display: 'flex',
+        flexGrow: 1, 
+        justifyContent: 'center', 
+        alignItems: 'center'
+      }
   });
 
   export default styles
